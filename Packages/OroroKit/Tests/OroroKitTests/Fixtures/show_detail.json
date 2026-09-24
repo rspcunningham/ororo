@@ -1,0 +1,7 @@
+{"array_countries":["GB"],"array_genres":["Comedy","Crime"],"backdrop_url":null,"desc":"Detective show.","ended":false,"id":3934,"imdb_id":"1888075","imdb_rating":7.8,"kinopoisk_id":"","length":60,"myshows_id":21346,"name":"Death in Paradise","newest_video":1775379930,"poster_thumb":"https://front.example.test/p.jpg","slug":"death-in-paradise","tmdb_id":"41956","updated_at":1789926983,"user_popularity":52,"year":"2011","seasons":2,
+"episodes":[
+{"airdate":"2012-01-02","id":102,"info":{"original":"/uploads/video/file/102/a.mkv","smil":"/uploads/video/file/102/a.smil","thumbs":600},"myshows_id":2,"name":"Arriving in Paradise","number":"2","plot":"Second.","resolution":"HD","season":1,"updated_at":1700000000,"versions":{"720p":"/uploads/video/file/102/a_720p.mp4"},"watched_media_count":10},
+{"airdate":"2013-01-01","id":201,"info":{"original":"x","smil":"y","thumbs":1},"myshows_id":null,"name":null,"number":"1","plot":null,"resolution":"HD","season":2,"updated_at":1700000000,"versions":{},"watched_media_count":3},
+{"airdate":"2012-01-01","id":101,"info":{"original":"x","smil":"y","thumbs":1},"myshows_id":1,"name":"Episode 1","number":"1","plot":"First.","resolution":"HD","season":1,"updated_at":1700000000,"versions":{},"watched_media_count":12},
+{"airdate":"2012-01-10","id":110,"info":{"original":"x","smil":"y","thumbs":1},"myshows_id":3,"name":"Episode 10","number":"10","plot":"Tenth.","resolution":"SD","season":1,"updated_at":1700000000,"versions":{},"watched_media_count":1}
+]}

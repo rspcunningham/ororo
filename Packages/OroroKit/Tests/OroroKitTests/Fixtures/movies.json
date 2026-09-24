@@ -1,0 +1,4 @@
+{"movies":[
+{"array_countries":["BE","FR","LT"],"array_genres":["Sci-Fi","Drama","Adventure"],"backdrop_url":null,"desc":"After the collapse of Earth's ecosystem...","id":7140,"imdb_id":"20225374","imdb_rating":6.0,"length":114,"name":"Vesper","poster_thumb":"https://front.example.test/uploads/movie/poster/7140/p.jpg","resolution":"HD","updated_at":1785306097,"year":"2022"},
+{"array_countries":["FR"],"array_genres":["Comedy","Romance"],"backdrop_url":"https://uploads.example.test/b.jpg","desc":"A shy waitress in Paris.","id":55,"imdb_id":"0211915","imdb_rating":8.3,"length":122,"name":"Amélie","poster_thumb":"https://front.example.test/p55.jpg","resolution":"SD","updated_at":1700000000,"year":"2001"}
+]}

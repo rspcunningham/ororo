@@ -1,0 +1,13 @@
+# Xcode (the project is generated from project.yml by XcodeGen)
+*.xcodeproj
+*.xcworkspace
+xcuserdata/
+DerivedData/
+OroroTV/Info.plist
+
+# SwiftPM
+.build/
+.swiftpm/
+Packages/OroroKit/Package.resolved
+
+.DS_Store

@@ -1,0 +1,49 @@
+name: OroroTV
+options:
+  bundleIdPrefix: tv.ororo.client
+  deploymentTarget:
+    tvOS: "17.0"
+  createIntermediateGroups: true
+
+packages:
+  OroroKit:
+    path: Packages/OroroKit
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    # Set your Apple team here (or in Xcode's Signing & Capabilities tab).
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+
+targets:
+  OroroTV:
+    type: application
+    platform: tvOS
+    sources:
+      - OroroTV
+    dependencies:
+      - package: OroroKit
+    info:
+      path: OroroTV/Info.plist
+      properties:
+        CFBundleDisplayName: Ororo
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        UILaunchScreen: {}
+        UIRequiredDeviceCapabilities: [arm64]
+        UIUserInterfaceStyle: Dark
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: tv.ororo.client.OroroTV
+        TARGETED_DEVICE_FAMILY: "3"
+
+schemes:
+  OroroTV:
+    build:
+      targets:
+        OroroTV: all
+    run:
+      config: Debug
+    test:
+      config: Debug
