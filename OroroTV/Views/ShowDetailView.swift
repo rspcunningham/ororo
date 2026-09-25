@@ -78,9 +78,16 @@ struct ShowDetailView: View {
             ScrollView(.horizontal) {
                 HStack(spacing: 20) {
                     ForEach(detail.seasonNumbers, id: \.self) { number in
-                        Button("Season \(number)") { season = number }
-                            .tint(number == season ? .white : nil)
-                            .fontWeight(number == season ? .bold : .regular)
+                        Button { season = number } label: {
+                            // The white tint doesn't change the label color, so set it here.
+                            if number == season {
+                                Text("Season \(number)").foregroundStyle(.black)
+                            } else {
+                                Text("Season \(number)")
+                            }
+                        }
+                        .tint(number == season ? .white : nil)
+                        .fontWeight(number == season ? .bold : .regular)
                     }
                 }
                 .padding(.vertical, 20)
