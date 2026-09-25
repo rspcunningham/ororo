@@ -3,6 +3,8 @@
 *.xcworkspace
 xcuserdata/
 DerivedData/
+# Local command-line builds and signing overrides
+build/
 OroroTV/Info.plist
 
 # SwiftPM

@@ -33,6 +33,8 @@ targets:
         UILaunchScreen: {}
         UIRequiredDeviceCapabilities: [arm64]
         UIUserInterfaceStyle: Dark
+        # Only standard HTTPS, so TestFlight doesn't ask about encryption on every build.
+        ITSAppUsesNonExemptEncryption: false
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: tv.ororo.client.OroroTV
