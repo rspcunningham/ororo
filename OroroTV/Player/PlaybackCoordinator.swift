@@ -68,8 +68,22 @@ final class PlaybackCoordinator {
             MainActor.assumeIsolated { self?.finish() }
         }
 
+        selectAudio(for: item)
         loadSubtitles()
         player.play()
+    }
+
+    /// Ororo's playlists mark their only audio rendition as auxiliary (not
+    /// DEFAULT or AUTOSELECT), so automatic media selection picks none and
+    /// the video plays silently. Select it explicitly.
+    private func selectAudio(for item: AVPlayerItem) {
+        Task {
+            guard let group = try? await item.asset.loadMediaSelectionGroup(for: .audible),
+                  item.currentMediaSelection.selectedMediaOption(in: group) == nil,
+                  let option = group.options.first(where: \.isPlayable) ?? group.options.first
+            else { return }
+            item.select(option, in: group)
+        }
     }
 
     func stop() {
