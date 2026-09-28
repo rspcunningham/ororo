@@ -29,7 +29,7 @@ targets:
       properties:
         CFBundleDisplayName: Ororo
         CFBundleShortVersionString: "1.0"
-        CFBundleVersion: "1"
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         UILaunchScreen: {}
         UIRequiredDeviceCapabilities: [arm64]
         UIUserInterfaceStyle: Dark
@@ -38,6 +38,8 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: tv.ororo.client.OroroTV
+        # CI overrides this with the workflow run number; every upload needs a higher one.
+        CURRENT_PROJECT_VERSION: "1"
         TARGETED_DEVICE_FAMILY: "3"
 
 schemes:
