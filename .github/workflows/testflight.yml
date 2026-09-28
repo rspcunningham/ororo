@@ -13,6 +13,10 @@ name: TestFlight
 on:
   push:
     branches: [main]
+  # TestFlight builds expire after 90 days; a monthly build keeps the
+  # installed app current even when nothing is pushed.
+  schedule:
+    - cron: "0 9 1 * *"
   workflow_dispatch:
 
 concurrency:
